@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bloodd" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="03a4ac60-d59f-4737-81c1-8c404928f11f">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="blood"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM `donaters` ORDER BY `id` ASC]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<field name="fname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fname"/>
+		<property name="com.jaspersoft.studio.field.label" value="fname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<field name="lname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="lname"/>
+		<property name="com.jaspersoft.studio.field.label" value="lname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<field name="nic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nic"/>
+		<property name="com.jaspersoft.studio.field.label" value="nic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<field name="contact" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="contact"/>
+		<property name="com.jaspersoft.studio.field.label" value="contact"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<field name="dob" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dob"/>
+		<property name="com.jaspersoft.studio.field.label" value="dob"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<field name="Age" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Age"/>
+		<property name="com.jaspersoft.studio.field.label" value="Age"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<field name="adress" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="adress"/>
+		<property name="com.jaspersoft.studio.field.label" value="adress"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="email"/>
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<field name="status_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="status_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="status_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="donaters"/>
+	</field>
+	<group name="id">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+	</group>
+	<group name="fname">
+		<groupExpression><![CDATA[$F{fname}]]></groupExpression>
+	</group>
+	<group name="lname">
+		<groupExpression><![CDATA[$F{lname}]]></groupExpression>
+	</group>
+	<group name="nic">
+		<groupExpression><![CDATA[$F{nic}]]></groupExpression>
+	</group>
+	<group name="contact">
+		<groupExpression><![CDATA[$F{contact}]]></groupExpression>
+	</group>
+	<group name="dob">
+		<groupExpression><![CDATA[$F{dob}]]></groupExpression>
+	</group>
+	<group name="Age">
+		<groupExpression><![CDATA[$F{Age}]]></groupExpression>
+	</group>
+	<group name="adress">
+		<groupExpression><![CDATA[$F{adress}]]></groupExpression>
+	</group>
+	<group name="email">
+		<groupExpression><![CDATA[$F{email}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="197" splitType="Stretch">
+			<frame>
+				<reportElement mode="Transparent" x="-20" y="0" width="595" height="197" backcolor="#FFFFFF" uuid="ab37d192-8c9d-4791-b41f-1b869ec85c30"/>
+				<staticText>
+					<reportElement mode="Opaque" x="40" y="0" width="510" height="70" forecolor="#DE0715" backcolor="#F7F6CD" uuid="6c1b1cbb-fd73-4d9a-988f-91917e2031d8"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+						<font fontName="Iskoola Pota" size="40"/>
+					</textElement>
+					<text><![CDATA[ලේ දන් දීමේ කදවුර - 2023]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="160" width="23" height="28" forecolor="#820A12" uuid="6b2475b0-d731-4278-beac-1ea6a9d0e5c9"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Id]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="23" y="160" width="79" height="28" forecolor="#820A12" uuid="766b9ff6-6f4a-4e81-bb51-b78ac6c4ef38"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[First Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="102" y="160" width="68" height="28" forecolor="#820A12" uuid="181a6f6b-078e-4848-ac32-faa2be56a30a"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[Last Name]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="170" y="160" width="60" height="28" forecolor="#820A12" uuid="98bb7b1a-4f99-4b6b-bccb-a1a83a1fab9f"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="11"/>
+					</textElement>
+					<text><![CDATA[NIC]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="230" y="160" width="62" height="28" forecolor="#820A12" uuid="5c54ab33-70aa-4605-9e06-0f39f9d76045"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Contact]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="292" y="160" width="68" height="28" forecolor="#820A12" uuid="c799a7c6-2665-407e-a647-b647c47f028b"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[DOB]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="360" y="160" width="50" height="28" forecolor="#820A12" uuid="bf39001b-c082-4b8f-ac95-230bfc1c2390"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Age]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="410" y="160" width="100" height="28" forecolor="#820A12" uuid="a241f55c-12a2-428e-b34b-e9c19d79a2ad"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Address]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="510" y="160" width="85" height="28" forecolor="#820A12" uuid="ee444f37-f101-4e60-bf5d-1fb703331e18"/>
+					<box>
+						<pen lineWidth="1.0" lineColor="#050505"/>
+						<topPen lineWidth="1.0" lineStyle="Solid"/>
+						<leftPen lineWidth="1.0" lineStyle="Solid"/>
+						<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+						<rightPen lineWidth="1.0" lineStyle="Solid"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<text><![CDATA[Email]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="0" y="120" width="595" height="30" forecolor="#BF7A0B" uuid="7b7bc9cb-cc29-4990-8d08-84f88dea0f03"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+						<font fontName="Iskoola Pota" size="26"/>
+					</textElement>
+					<text><![CDATA[සියලු ලේ දෙන්නන්ගේ වාර්තාව]]></text>
+				</staticText>
+				<staticText>
+					<reportElement mode="Transparent" x="0" y="70" width="595" height="30" forecolor="#050505" uuid="0c33d41b-903b-4230-9dbe-d7e7790d5590"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="html">
+						<font fontName="Iskoola Pota" size="18"/>
+					</textElement>
+					<text><![CDATA[තරුණ බෞද්ධ සංගමය - අම්බලන්ගොඩ ]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="-20" y="0" width="23" height="30" uuid="991f5599-054e-46cd-9e3e-411d4eaa1492"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="3" y="0" width="77" height="30" uuid="86dda8c5-7656-4c08-a916-52a5d94610fa"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="0" width="70" height="30" uuid="f4bf62f8-9a5c-4e98-81ff-535cef75c2d3"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{lname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="60" height="30" uuid="e6aee3f6-24b6-416c-8c61-85a059cb99ad"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="62" height="30" uuid="7a322338-7c5d-4e56-91c0-c5eb515193ba"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{contact}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="272" y="0" width="68" height="30" uuid="0e3e8853-6f0f-4953-9314-582c018f7003"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="50" height="30" uuid="521058a4-04e2-4e61-ad4a-3f680a96ca4b"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="0" width="100" height="30" uuid="9c7e62c6-c167-4e9d-ad43-1d2f06a9d435"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{adress}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="0" width="85" height="30" uuid="555caef5-2caf-46b0-a67d-fd4c74a87ed3"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
